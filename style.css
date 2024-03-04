@@ -1,6 +1,9 @@
 html {
     box-sizing: border-box;
 }
+body {
+    margin: 0px;
+}
 
 *::before,
 *::after {
@@ -15,42 +18,36 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 }
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.box {
+    position: relative;
 }
-
-.list {
-    list-style: none;
-    padding: 0;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.visually-hidden {
+.box-item:nth-child(1) {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-/* .box {
     width: 150px;
     height: 150px;
     background-color: red;
-} */
+    left: 200px;
+    top: 200px;
+}
+.box-item:nth-child(2) {
+position: absolute;
+    width: 150px;
+    height: 150px;
+   background-color: blue;
+    left: 290px;
+    top: 290px;
+    z-index: 1;
+}
+.box-item:nth-child(3) {
+position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    left: 390px;
+    top: 390px;
+}
