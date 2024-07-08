@@ -1,4 +1,4 @@
-html {
+/* html {
     box-sizing: border-box;
 }
 body {
@@ -22,10 +22,11 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-}
+} */
 .box {
     position: relative;
 }
+
 .box-item:nth-child(1) {
     position: absolute;
     width: 150px;
@@ -34,17 +35,19 @@ ul {
     left: 200px;
     top: 200px;
 }
+
 .box-item:nth-child(2) {
-position: absolute;
+    position: absolute;
     width: 150px;
     height: 150px;
-   background-color: blue;
+    background-color: blue;
     left: 290px;
     top: 290px;
     z-index: 1;
 }
+
 .box-item:nth-child(3) {
-position: absolute;
+    position: absolute;
     width: 150px;
     height: 150px;
     background-color: green;
